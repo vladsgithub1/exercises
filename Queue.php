@@ -29,12 +29,3 @@ class Queue extends Structure
         return $res;
     }
 }
-
-$obj = new Queue();
-// /// //
-$obj->in(5);
-$obj->in(5);
-$obj->in(5);
-$obj->in(5);
-$text = serialize($obj);
-file_put_contents('test.txt', $text);
